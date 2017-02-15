@@ -1,0 +1,5 @@
+In Python you can функции
+In Python you can циклы
+In Python you can объекты
+In Python you can классы
+In Python you can модули

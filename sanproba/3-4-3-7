@@ -1,0 +1,61 @@
+# 3-4
+frend = ['san', 'pan', 'ran']
+kol_gost = len(frend)
+prig = ', приглашаю вас в гости'
+wsego_gost = 'Всего приглашено гостей '
+
+print(wsego_gost, kol_gost)
+print(frend[0] + prig)
+print(frend[1] + prig)
+print(frend[2] + prig)
+print('\n', frend[1], 'не сможет придти. Введите имя нового гостя')
+nevfrend = input()
+frend[1] = nevfrend
+kol_gost = len(frend)
+
+print(wsego_gost, kol_gost)
+print(frend)
+print(frend[0] + prig)
+print(frend[1] + prig)
+print(frend[2] + prig)
+print('Гостей будет на трех человек больше.')
+
+frend.insert(0, 'warm')
+frend.insert(3, 'sarm')
+frend.insert(-1, 'darm')
+kol_gost = len(frend)
+
+print(wsego_gost, kol_gost)
+print(frend)
+print(frend[0] + prig)
+print(frend[1] + prig)
+print(frend[2] + prig)
+print(frend[3] + prig)
+print(frend[4] + prig)
+print(frend[5] + prig)
+print('полный список гостей ', frend)
+print('На обед приглашено всего два гостя')
+
+# frend.pop() - если добавить еще такую строку, то будет удаляться последний элемент, но без сохранении в памяти, и в следующей строке уже будет удаляться и сохраняться в памяти предпоследний элемент.
+delfrend = frend.pop()
+print(delfrend + ' я сожалению об отмене приглашения')
+delfrend = frend.pop()
+print(delfrend + ' я сожалению об отмене приглашения')
+delfrend = frend.pop()
+print(delfrend + ' я сожалению об отмене приглашения')
+delfrend = frend.pop()
+print(delfrend + ' я сожалению об отмене приглашения')
+
+kol_gost = len(frend)
+print(wsego_gost, kol_gost)
+
+print(frend[0], 'прежнее приглашение остается в силе')
+print(frend[1], 'прежнее приглашение остается в силе')
+# Важно сначала удалить элемент с индексом 1, а потом 0, так как если наоборот, то ошибка - после элемента (0) элемент (1) перемещается под индекс (0) и элемент с индексом (1) перестает существовать
+del frend[1]
+del frend[0]
+
+kol_gost = len(frend)
+print(wsego_gost, kol_gost)
+
+print(frend)
