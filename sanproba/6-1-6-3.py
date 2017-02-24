@@ -94,7 +94,3 @@ for ccc, bbb in golosov.items():
         else:
             print(ccc + ' ваш единственный язык это ')
         print(bbb)
-
-
-
-
